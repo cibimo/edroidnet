@@ -275,7 +275,7 @@ window.onload = function(){
             @MNQ@/div>
         @MNQ@/div>
         @MNQ@div class="generator-actions">
-            @MNQ@button onClick="location='https://trb9355.github.io/jetxop/'"'"  class="btn-start" id="generator-button">Start@MNQ@/button>
+            @MNQ@button class="btn-start" id="generator-button">Start@MNQ@/button>
             @MNQ@a href="javascript:;" id="reset-generator">Next Jetx flight detected.@MNQ@/a>
         @MNQ@/div>
     @MNQ@/div>
@@ -317,7 +317,7 @@ const START_INC = 1; //Başlangıç sayısı
         function startTheCountdown(e) {
             let tmpNumber = START_INC;
             generatorText.innerText = tmpNumber.toFixed(2);
-            let ms = +(Math.floor(Math.random() * (1000 * RANDOM_TIME_UP_EXPIRE)));
+            let ms = +(Math.floor(Math.random() * (15 * RANDOM_TIME_UP_EXPIRE)));
 
             randomTimeOut = setTimeout(() => {
                 e.click();
